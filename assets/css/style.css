@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --p: #1E2541;
+    --s: #2F3167;
+    --t: #414891;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    background: #1E2541;
+}
+
+.cabecalho__topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 2rem;
+}
+
+.menu__lista {
+    display: flex;
+    list-style: none;
+}
+
+.menu__item {
+    margin: 4px;
+    padding: 4px;
+}
+
+.menu__link {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.cabecalho__hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3rem;
+}
+
+.cabecalho__hero__conteudo {
+    color: #FFF;
+    max-width: 500px;
+    text-align: justify;
+}
+
+.cabecalho__hero__conteudo img {
+    max-width: 500px;
+}
+
+.cabecalho__hero__titulo {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.cabecalho__hero__subtitulo {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.cabecalho__hero__button {
+    background: #b80101;
+    color: #FFF;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.mostragem {
+    display: flex;
+    justify-content: space-around;
+    background: #2F3167;
+    color: #FFF;
+    overflow-y: hidden;
+    padding: 3rem 0;
+}
+
+.mostragem__texto {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mostragem__titulo {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.mostragem__cursos {
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    background: #414891;
+    border-radius: 15px;
+    margin: 4px;
+    padding: 10px;
+}
+
+.card__header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.card .color {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.card:nth-child(1) .color {
+    background-color: red;
+}
+
+.card:nth-child(2) .color {
+    background-color: blue;
+}
+
+.card:nth-child(3) .color {
+    background-color: yellow;
+}
+
+.card:nth-child(4) .color {
+    background-color: green;
+}
+
+.card:nth-child(5) .color {
+    background-color: purple;
+}
+
+.card:nth-child(6) .color {
+    background-color: pink; 
+}
