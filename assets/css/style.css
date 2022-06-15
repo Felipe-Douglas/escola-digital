@@ -8,21 +8,22 @@
 
 :root {
     /* Cor padrão */
-    --p: #1E2541;
-    --s: #2F3167;
-    --t: #414891;
+    --default-one: #1E2541;
+    --default-two: #2F3167;
+    --default-three: #414891;
 
 
     /* Cor dark mode */
-    --g: #242424;
-    --f: #333333;
-    --o: #464646;
+    --darkmode-one: #242424;
+    --darkmode-two: #333333;
+    --darkmode-three: #464646;
 }
 
 html, body {
     width: 100%;
     overflow-x: hidden;
-    background: #242424;
+    background: var(--default-one);
+    text-align: justify;
 }
 
 .cabecalho__topo {
@@ -90,7 +91,7 @@ html, body {
 .mostragem {
     display: flex;
     justify-content: space-around;
-    background: #333333;
+    background: var(--default-two);
     color: #FFF;
     overflow-y: hidden;
     padding: 3rem 0;
@@ -118,7 +119,7 @@ html, body {
 .card {
     width: 150px;
     height: 150px;
-    background: #464646;
+    background: var(--default-three);
     border-radius: 15px;
     margin: 4px;
     padding: 10px;
@@ -172,7 +173,7 @@ html, body {
 .destaques__card {
     width: 300px;
     height: 400px;
-    background: #464646;
+    background: var(--default-two);
     border-radius: 15px;
     margin: 20px;
     padding: 8px;
@@ -198,5 +199,53 @@ html, body {
     padding: 10px;
     border-radius: 2px;
     text-decoration: none;
+    text-align: center;
+}
+
+/* Rodape */
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    background: var(--default-two);
+}
+
+.rodape__contaudo {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 3rem;
+}
+
+.rodape__contaudo p{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.rodape__contaudo ul {
+    list-style: none;
+}
+
+.rodape__contaudo li:first-child {
+    font-weight: 700;
+    color: #FFF;
+}
+
+.rodape__contaudo li {
+    margin: 10px 0;
+}
+
+.rodape__contaudo a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.rodape__copyright {
+    background: var(--default-three);
+}
+
+.rodape__copyright p {
+    color: #FFF;
+    padding: 8px 0;
     text-align: center;
 }
