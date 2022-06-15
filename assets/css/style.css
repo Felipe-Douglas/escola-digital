@@ -7,15 +7,22 @@
 }
 
 :root {
+    /* Cor padrão */
     --p: #1E2541;
     --s: #2F3167;
     --t: #414891;
+
+
+    /* Cor dark mode */
+    --g: #242424;
+    --f: #333333;
+    --o: #464646;
 }
 
 html, body {
     width: 100%;
     overflow-x: hidden;
-    background: #1E2541;
+    background: #242424;
 }
 
 .cabecalho__topo {
@@ -78,10 +85,12 @@ html, body {
     border-radius: 2px;
 }
 
+/* Mostragem de modulos de cursos */
+
 .mostragem {
     display: flex;
     justify-content: space-around;
-    background: #2F3167;
+    background: #333333;
     color: #FFF;
     overflow-y: hidden;
     padding: 3rem 0;
@@ -109,7 +118,7 @@ html, body {
 .card {
     width: 150px;
     height: 150px;
-    background: #414891;
+    background: #464646;
     border-radius: 15px;
     margin: 4px;
     padding: 10px;
@@ -150,4 +159,44 @@ html, body {
 
 .card:nth-child(6) .color {
     background-color: pink; 
+}
+
+/* Cursos em destaque */
+
+.destaques {
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.destaques__card {
+    width: 300px;
+    height: 400px;
+    background: #464646;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.destaques__card__image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.destaques__card__titulo {
+    font-size: 2rem;
+    color: #FFF;
+    margin: 10px 0;
+}
+
+.destaques__card_button {
+    background: #b80101;
+    color: #FFF;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 2px;
+    text-decoration: none;
+    text-align: center;
 }
