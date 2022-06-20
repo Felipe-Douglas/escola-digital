@@ -12,9 +12,9 @@
     --card: #082d5e;
 
     /* Cor padrão */
-    /* --default-one: #1E2541;
+    --default-one: #1E2541;
     --default-two: #2F3167;
-    --default-three: #414891; */
+    --default-three: #414891;
 
 
     /* Cor dark mode */
@@ -27,6 +27,7 @@ html, body {
     width: 100%;
     overflow-x: hidden;
     text-align: justify;
+    background: var(--default-two);
 }
 
 .section__title {
@@ -36,7 +37,7 @@ html, body {
 }
 
 .cabecalho {
-    background: var(--padrao);
+    background: var(--default-one);
 }
 
 .cabecalho__topo {
@@ -44,6 +45,10 @@ html, body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 2rem;
+}
+
+.cabecalho__topo p {
+    color: #FFF;
 }
 
 .menu__lista {
@@ -68,16 +73,6 @@ html, body {
     outline: none;
     cursor: pointer;
     transition: .3s;
-}
-
-.light-mode {
-    background: url(../img/light-mode.svg);
-    background-size: cover;
-}
-
-.dark-mode {
-    background: url(../img/dark-mode.svg);
-    background-size: cover;
 }
 
 .cabecalho__hero {
@@ -125,6 +120,8 @@ html, body {
     justify-content: space-around;
     overflow-y: hidden;
     padding: 3rem 0;
+    background: var(--default-two);
+    color: #FFF;
 }
 
 .mostragem__texto {
@@ -150,7 +147,7 @@ html, body {
     width: 150px;
     height: 150px;
     color: #FFF;
-    background: var(--card);
+    background: var(--default-three);
     border-radius: 15px;
     margin: 4px;
     padding: 10px;
@@ -200,6 +197,8 @@ html, body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    background: var(--default-two);
+    color: #fff;
 }
 
 .destaques__cards {
@@ -216,7 +215,7 @@ html, body {
     padding: 8px;
     display: flex;
     flex-direction: column;
-    background: #F5F5F5;
+    background: var(--default-three);
 }
 
 .destaques__card__image {
@@ -244,13 +243,17 @@ html, body {
 .planos__cards {
     display: flex;
     justify-content: center;
-    background: linear-gradient(to bottom, #FFF 10%, #051933 10%, #051933 80%, #FFF 10%);
+    background: linear-gradient(to bottom, var(--default-two) 30%, var(--default-one) 10%, var(--default-one) 80%, var(--default-one) 10%);
+}
+
+.planos {
+    color: #FFF;
 }
 
 .planos__card {
     border: 1px solid rgba(0, 0, 0, .3);
     border-radius: 15px;
-    margin: 10px 4px;
+    margin: 10px 30px;
     padding: 8px;
     height: 400px;
     max-width: 300px;
@@ -260,14 +263,18 @@ html, body {
     flex-direction: column;
     justify-content: space-around;  
     align-items: center;
+    background: var(--default-three);
 }
 
 .planos__lista {
     list-style: none;
+    height: 50%;
 }
 
 .planos__itens {
     margin: 8px 0;
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
 .planos__titulo {
@@ -289,6 +296,8 @@ html, body {
     text-transform: uppercase;
     color: #FFF;
     cursor: pointer;
+    font-weight: 700;
+    background: var(--default-two);
 }
 
 
@@ -297,7 +306,8 @@ html, body {
 .rodape {
     display: flex;
     flex-direction: column;
-    background: var(--padrao);
+    background: var(--default-one);
+    padding: 3rem 0 0;
 }
 
 .rodape__contaudo {
@@ -331,11 +341,11 @@ html, body {
 }
 
 .rodape__copyright {
-    background: var(--default-three);
+    background: var(--default-one);
 }
 
 .rodape__copyright p {
     color: #FFF;
-    padding: 8px 0;
+    padding: 10px 0;
     text-align: center;
 }
