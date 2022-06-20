@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    
+    --padrao: #051933;
+    --card: #082d5e;
+
+    /* Cor padrão */
+    --default-one: #1E2541;
+    --default-two: #2F3167;
+    --default-three: #414891;
+
+
+    /* Cor dark mode */
+    --darkmode-one: #242424;
+    --darkmode-two: #333333;
+    --darkmode-three: #464646;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    text-align: justify;
+    background: var(--default-two);
+}
+
+.section__title {
+    font-size: 3rem;
+    margin: 10px 0;
+    text-align: center;
+    color: #FFF;
+}
+
+.cabecalho {
+    background: var(--default-one);
+}
+
+.cabecalho__topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 2rem;
+}
+
+.cabecalho__topo p {
+    color: #FFF;
+}
+
+.menu__lista {
+    display: flex;
+    list-style: none;
+}
+
+.menu__item {
+    margin: 4px;
+    padding: 4px;
+}
+
+.menu__link {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.changeMode {
+    height: 30px;
+    width: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.cabecalho__hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3rem;
+}
+
+.cabecalho__hero__conteudo {
+    color: #FFF;
+    max-width: 500px;
+    text-align: justify;
+}
+
+.cabecalho__hero__conteudo img {
+    max-width: 500px;
+}
+
+.cabecalho__hero__titulo {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.cabecalho__hero__subtitulo {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.cabecalho__hero__button {
+    background: #b80101;
+    color: #FFF;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+/* Container */
+
+.container {
+    padding: 5rem;
+    background: var(--default-two);
+}
+
+.container__cursos {
+    display: flex;
+    flex-direction: column;
+}
+
+.cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* cards dos cursos */
+
+.card__cursos {
+    margin: 10px;
+    padding: 8px;
+    background: var(--default-three);
+    height: 350px;
+    width: 250px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card__image {
+    width: 100%;
+    height: 50%;
+}
+
+.card__titulo {
+    margin: 4px 0;
+    color: #FFF;
+    height: 30%;
+    font-size: 1.4rem;
+    text-align: left;
+}
+
+.card__button {
+    height: 10%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: var(--default-two);
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.paginacao {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0;
+}
+
+.paginacao a {
+    color: #FFF;
+    text-decoration: none;
+    margin: 10px;
+    padding: 8px;
+    border-radius: 50%;
+    background: var(--default-three);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Rodape */
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    background: var(--default-one);
+    padding: 3rem 0 0;
+}
+
+.rodape__contaudo {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 3rem;
+}
+
+.rodape__contaudo p{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.rodape__contaudo ul {
+    list-style: none;
+}
+
+.rodape__contaudo li:first-child {
+    font-weight: 700;
+    color: #FFF;
+}
+
+.rodape__contaudo li {
+    margin: 10px 0;
+}
+
+.rodape__contaudo a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.rodape__copyright {
+    background: var(--default-one);
+}
+
+.rodape__copyright p {
+    color: #FFF;
+    padding: 10px 0;
+    text-align: center;
+}
